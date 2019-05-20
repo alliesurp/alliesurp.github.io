@@ -28,13 +28,30 @@ border: none;
 padding: 5px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 font-weight: bold;
-    background-color: orange;
+animation: colorchange 5s infinite;    
     color: white;
 }
 button:hover {
 padding-left: 15px;
 padding-right: 15px;
 box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-  background-color: black;
+ 
 }
+   @keyframes colorchange
+    {
+      0%   {background-color: red;}
+      25%  {background-color: yellow;}
+      50%  {background-color: blue;}
+      75%  {background-color: green;}
+      100% {background-color: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background-color: red;}
+      25%  {background-color: yellow;}
+      50%  {background-color: blue;}
+      75%  {background-color: green;}
+      100% {background-color: red;}
+    }
 </style>
