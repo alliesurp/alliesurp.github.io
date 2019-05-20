@@ -8,6 +8,8 @@
 <button>"Graphic Design is my passion"</button>
 </a>
   </header>
+  <p>Is it christmas?</p>
+<div id="answer"></div>
 </body>
 <style media="screen">
   body {
@@ -55,3 +57,18 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16);
       100% {background-color: red;}
     }
 </style>
+<script>
+  today = new Date();
+today.setFullYear(1985);
+christmas = new Date();
+christmas.setFullYear(1985, 11, 25);
+
+if (+today === +christmas) {
+    response = "Yes.";
+} else {
+    response = "No.";
+}
+
+document.getElementById("answer").innerHTML = response;
+
+</script>
