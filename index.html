@@ -111,7 +111,7 @@ border: none;
   }
   #linkButton {
     box-shadow: 0 1px 3px rgba(0,0,0,0.20);
-    width: 108%;
+    width: 100%;
     border: none;
     letter-spacing: 10px;
     animation: colorchange 3s infinite;
@@ -143,14 +143,11 @@ function move() {
       			random +=1;
             document.getElementById("gameButton").setAttribute("class","gameButton"+random);
             document.getElementById("gameButton").innerHTML = random;
-                        document.getElementById("h1").innerHTML += random;
 
 
       } else {
         document.getElementById("gameButton").setAttribute("class","gameButton"+random);
         document.getElementById("gameButton").innerHTML = random;
-                                document.getElementById("h1").innerHTML += random;
-
 
       }   
 
