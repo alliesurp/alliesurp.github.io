@@ -1,31 +1,137 @@
 <head>
+  <title>Home</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="allie surprise, alliesurp, allie surp, allies site, allies website">
+  <meta name="description" content="Super awesome website made by a super awesome human being.">
 </head>
 <body>
   <header>
-    Tis' meh head!
+    <h1>Home</h1>
+
+    <small>TESTING</small>
   </header>
-  <h1>BIG LETTERS</h1>
-  <h2>MEDIUM LeTtErS</h2>
-  <h3>tinys</h3>
-  <footer>
-    FEET
-    <a href="/test">
-					SAVE YOUR LIFE!
-				</a>
-  </footer>
+
+  <p>So essentially, this is where I will be testing out a bunch of <em>random nonsense</em>.</p>
+
+<div class="button">
+  <a href="/test">
+    <button id="linkButton"><marquee>TELEPORTATION</marquee></button>
+  </a>
+</div>
+
+<hr>
+
+<div class="game">
+  <small>Let's play a game :)</small>
+  <br>
+  <br>
+  <a>
+    <button onmouseover="move()" id="gameButton">Click Me!</button>
+  </a> 
+
+</div>
+
+
 </body>
 <style media="screen">
-  body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: pink;
-  }
+
   header {
-    background-color: grey;
+    background-color: lightblue;
     text-align: center;
     font-weight: bold;
     margin: -8;
-    padding: 15px; 
+    padding: 15px;
+    border-bottom: 5px solid black;
+
   }
+  h1 {
+    margin-block-end: 5px;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+/*  #gameButton:hover {
+    background: lightblue;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.40);
+
+  }*/
+  .game{
+    text-align: center;
+
+  }
+  #gameButton{
+    color: black;
+    background: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.09);
+
+  }
+  #gameButton1{
+    color: black;
+    background: pink;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.09);
+
+  }
+  #gameButton2{
+    color: black;
+    background: green;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.09);
+
+  }
+  #gameButton3{
+    color: black;
+    background: blue;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.09);
+
+  }
+  #gameButton4{
+    color: black;
+    background: orange;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.09);
+
+  }
+  #gameButton5{
+    color: black;
+    background: grey;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.09);
+
+  }
+  small {
+    padding: 10px;
+  }
+  #linkbutton {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.20);
+    width: 361px;
+    letter-spacing: 10px;
+    animation: colorchange 3s infinite;
+    color: white;
+    font-weight: bold;
+  }
+
+  @keyframes colorchange
+     {
+       0%   {background-color: lightblue;}
+       50%  {background-color: black;}
+       100% {background-color: lightblue;}
+     }
+     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+     {
+       0%   {background-color: lightblue;}
+       50%  {background-color: black;}
+       100% {background-color: lightblue;}
+     }
 </style>
+
+<script type="text/javascript">
+
+
+    function move() {
+      var min=1;
+      var max=6;
+      var random =Math.floor(Math.random() * (+max - +min)) + +min;
+
+      document.getElementById("gameButton")[0].setAttribute("class","gameButton"+random);
+    }
+</script>
