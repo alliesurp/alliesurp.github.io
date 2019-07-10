@@ -14,6 +14,7 @@ let path = [];
 
 function setup() {
 createCanvas(800, 600);
+canvas.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto;";
 const skip = 8;
 for (let i = 0; i < drawing.length; i += skip) {
 x.push(drawing[i].x);
